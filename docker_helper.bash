@@ -16,12 +16,12 @@
 # container_link_and_run_command_DOCKER_ARGS  - optional arguments passed to docker run in container_link_and_run_command (default: none)
 ##
 
-CONTAINER_NAME=bitnami-$APP_NAME-test
+CONTAINER_NAME=phillydevs-$APP_NAME-test
 IMAGE_NAME=${IMAGE_NAME:-bitnami/$APP_NAME}
 SLEEP_TIME=${SLEEP_TIME:-5}
 VOL_PREFIX=${VOL_PREFIX:-/bitnami/$APP_NAME}
 VOLUMES=${VOLUMES:-$VOL_PREFIX/data:$VOL_PREFIX/conf:$VOL_PREFIX/logs}
-HOST_VOL_PREFIX=${HOST_VOL_PREFIX:-/tmp/bitnami/$CONTAINER_NAME}
+HOST_VOL_PREFIX=${HOST_VOL_PREFIX:-/tmp/phillydevs/$CONTAINER_NAME}
 
 # Creates a container whose name has the prefix $CONTAINER_NAME
 # $1: name for the new container
